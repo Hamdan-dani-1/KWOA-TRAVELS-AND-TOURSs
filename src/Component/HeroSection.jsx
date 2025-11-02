@@ -11,7 +11,6 @@ const HeroSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [direction, setDirection] = useState("next");
 
-  // Detect slide direction
   useEffect(() => {
     if (!swiperRef.current) return;
 
@@ -51,10 +50,9 @@ const HeroSection = () => {
               }`}
               style={{ backgroundImage: `url(${item.image})` }}
             >
-              {/* Dark Overlay */}
+          
               <div className="absolute inset-0 bg-black/60 transition-opacity duration-700"></div>
 
-              {/* Text Content */}
               <div
                 className={`relative z-10 text-white max-w-[567px] xl:left-[130px] text-center xl:text-left transition-all duration-[1000ms] ease-out ${
                   activeIndex === index
@@ -74,7 +72,6 @@ const HeroSection = () => {
                 </button>
               </div>
 
-              {/* Large Rectangular Image Box */}
               <section
                 className={`hidden absolute z-20 top-[150px] right-[150px] border-4 border-white rounded-[30px] w-[400px] h-[350px] transition-all duration-[1200ms] ease-out xl:block ${
                   activeIndex === index
@@ -90,7 +87,6 @@ const HeroSection = () => {
                 ></div>
               </section>
 
-              {/* Small Circular Image */}
               <section
                 className={`hidden absolute z-20 top-[100px] right-[450px] border-4 border-white rounded-full w-[150px] h-[150px] transition-all duration-[1200ms] delay-200 ease-out xl:block ${
                   activeIndex === index
@@ -107,9 +103,7 @@ const HeroSection = () => {
           </SwiperSlide>
         ))}
 
-        {/* Navigation Buttons */}
         <div className="absolute top-[510px] left-1/2 -translate-x-1/2 z-[9999] flex items-center justify-center space-x-10 sm:left-1/6 sm:top-[480px]">
-          {/* Left Arrow */}
           <div
             className="custom-prev w-[70px] h-[70px] bg-white/20 hover:bg-white/40 text-white 
               rounded-full flex items-center justify-center cursor-pointer 
@@ -118,7 +112,6 @@ const HeroSection = () => {
             <i className="fa-solid fa-arrow-left text-white text-3xl"></i>
           </div>
 
-          {/* Right Arrow */}
           <div
             className="custom-next w-[70px] h-[70px] bg-white/20 hover:bg-white/40 text-white 
               rounded-full flex items-center justify-center cursor-pointer 
