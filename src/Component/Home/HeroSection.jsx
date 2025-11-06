@@ -4,7 +4,7 @@ import { Autoplay, Navigation, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import { HeroImage } from "../JsonData/Data";
+import { HeroImage } from "../../JsonData/Data";
 
 const HeroSection = () => {
   const swiperRef = useRef(null);
