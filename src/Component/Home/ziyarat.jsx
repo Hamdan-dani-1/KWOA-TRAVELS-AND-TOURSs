@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import kaabah1 from "../../assets/heroImage/ImamHussain1.webp";
+import poster from "../poster.png";
 import { ziyaratPackages } from "../../JsonData/Data";
 
 const ZiyaratPackages = () => {
@@ -63,15 +63,14 @@ const ZiyaratPackages = () => {
       >
         {ziyaratPackages.map((pkg) => (
           <SwiperSlide key={pkg.id}>
-            <div className="max-w-[350px] sm:max-w-[380px] mx-auto relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition-all duration-500 group">
+            <div className="w-[350px] sm:w-[380px] mx-auto relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition-all duration-500 group">
               {/* Image */}
-              <div className="relative h-56 overflow-hidden">
+              <div className="relative w-full h-[320px] bg-transparent flex items-center justify-center overflow-hidden">
                 <img
-                  src={kaabah1}
+                  src={poster}
                   alt={pkg.title}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                  className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
                 <div className="absolute bottom-3 left-4 text-white text-sm flex items-center gap-2">
                   <i className="fa-solid fa-location-dot text-accentt"></i>
                   {pkg.location}

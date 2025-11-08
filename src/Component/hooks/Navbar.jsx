@@ -36,15 +36,21 @@ const Navbar = () => {
 
           {/* Dropdown Menu */}
           {dropdownOpen && (
-            <ul className="absolute top-full left-0 mt-2 bg-black/70 backdrop-blur-md rounded-md shadow-lg w-[200px] py-2 text-white z-50">
+            <ul className="absolute top-full left-0 mt-2 bg-black/70 backdrop-blur-md rounded-md shadow-lg w-[200px] py-2 text-white z-50 transition delay-150 duration-300 ease-in-out ">
               <li className="px-4 py-2 hover:bg-accentt transition">
-                <Link to="/zayarat/iraq">Iraq Packages</Link>
+                <Link to="/zayarat/13rajab">13 Rajab Group</Link>
               </li>
               <li className="px-4 py-2 hover:bg-accentt transition">
-                <Link to="/zayarat/iran">Iran Packages</Link>
+                <Link to="/zayarat/wintervacation">Winter Vacation</Link>
               </li>
               <li className="px-4 py-2 hover:bg-accentt transition">
-                <Link to="/zayarat/syria">Syria Packages</Link>
+                <Link to="/zayarat/iranspecial">Iran Special December Package</Link>
+              </li>
+              <li className="px-4 py-2 hover:bg-accentt transition">
+                <Link to="/zayarat/iraqzayarat">19 days iraq zayarat package 2026</Link>
+              </li>
+              <li className="px-4 py-2 hover:bg-accentt transition">
+                <Link to="/zayarat/shabangroup">Shaban Group</Link>
               </li>
             </ul>
           )}
@@ -53,11 +59,13 @@ const Navbar = () => {
         <li className="hover:text-accentt cursor-pointer transition">Ashura Oblige 
           
            </li>
-        <li className="hover:text-accentt cursor-pointer transition">Arbaeen</li>
+        <li className="hover:text-accentt cursor-pointer transition">
+          <Link to="/arbaeen" > Arbaeen</Link>
+         </li>
         <li className="hover:text-accentt cursor-pointer transition">Umrah</li>
         <li className="hover:text-accentt cursor-pointer transition">About</li>
         <li className="hover:text-accentt mr-[20px] cursor-pointer transition">
-                    <Link to="/contact">Contact</Link>
+        <Link to="/contact">Contact</Link>
 
         </li>
       </ul>
@@ -76,12 +84,53 @@ const Navbar = () => {
         `}
       >
         <ul className="pl-[3rem] pt-[1rem] pb-[1rem] space-y-2 text-white">
-          <li><Link to="/home">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/testimonials">Testimonials</Link></li>
-          <li><Link to="/our-work">Our Work</Link></li>
-          <li><Link to="/news">News</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li className="hover:text-accentt cursor-pointer transition">
+          <Link to="/home">Home</Link>
+        </li>
+
+        {/* Zayarat Dropdown */}
+        <li 
+          className="relative group cursor-pointer"
+          onMouseEnter={() => setDropdownOpen(true)}
+          onMouseLeave={() => setDropdownOpen(false)}
+        >
+          <div className="flex items-center gap-1">
+            Zayarat Packages
+            <i className="fa-solid fa-chevron-down text-sm mt-[2px]"></i>
+          </div>
+
+          {/* Dropdown Menu */}
+          {dropdownOpen && (
+            <ul className="absolute top-full left-0 mt-2 bg-black/70 backdrop-blur-md rounded-md shadow-lg w-[200px] py-2 text-white z-50 transition delay-150 duration-300 ease-in-out ">
+              <li className="px-4 py-2 hover:bg-accentt transition">
+                <Link to="/zayarat/13rajab">13 Rajab Group</Link>
+              </li>
+              <li className="px-4 py-2 hover:bg-accentt transition">
+                <Link to="/zayarat/wintervacation">Winter Vacation</Link>
+              </li>
+              <li className="px-4 py-2 hover:bg-accentt transition">
+                <Link to="/zayarat/iranspecial">Iran Special December Package</Link>
+              </li>
+              <li className="px-4 py-2 hover:bg-accentt transition">
+                <Link to="/zayarat/iraqzayarat">19 days iraq zayarat package 2026</Link>
+              </li>
+              <li className="px-4 py-2 hover:bg-accentt transition">
+                <Link to="/zayarat/shabangroup">Shaban Group</Link>
+              </li>
+            </ul>
+          )}
+        </li>
+
+        <li className="hover:text-accentt cursor-pointer transition">Ashura Oblige 
+          
+           </li>
+        <li className="hover:text-accentt cursor-pointer transition">Arbaeen</li>
+        <li className="hover:text-accentt cursor-pointer transition">Umrah</li>
+        <li className="hover:text-accentt cursor-pointer transition">About</li>
+        <li className="hover:text-accentt mr-[20px] cursor-pointer transition">
+                    <Link to="/contact">Contact</Link>
+
+        </li>
         </ul>
       </div>
     </nav>
