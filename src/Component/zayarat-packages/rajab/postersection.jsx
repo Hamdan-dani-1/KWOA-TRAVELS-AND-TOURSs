@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Poster from "../poster.png";
-import BuyNowButton from "./buynowbutton";
-import Whatsapp from "../Contact/Whatsapp";
+import Poster from "../../poster.png";
+import BuyNowButton from "../buynowbutton";
+import Whatsapp from "../../Contact/Whatsapp";
 
 const Postersection = () => {
   return (

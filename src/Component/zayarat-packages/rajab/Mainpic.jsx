@@ -1,7 +1,7 @@
 import React from "react";
-import bgImage1 from "../../assets/heroImage/heroo6.jpg";
+import bgImage1 from "../../../assets/heroImage/heroo6.jpg";
 import { motion } from "framer-motion";
-import bgImage2 from "../../assets/heroImage/zuljanah.jpg";
+import bgImage2 from "../../../assets/heroImage/zuljanah.jpg";
 const Mainpic = () => {
   return (
     <motion.div
