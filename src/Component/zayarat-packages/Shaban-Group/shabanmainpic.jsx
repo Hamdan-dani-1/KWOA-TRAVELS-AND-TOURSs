@@ -1,8 +1,8 @@
 import React from "react";
 import bgImage1 from "../../../assets/heroImage/heroo6.jpg";
 import { motion } from "framer-motion";
-import bgImage2 from "./RezaShrine.jpg";
-const IranMainpic = () => {
+import bgImage2 from "./shabanback.jpg";
+const ShabanMainpic = () => {
   return (
     <motion.div
       className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh]"
@@ -19,6 +19,7 @@ const IranMainpic = () => {
         whileInView={{ scale: 1 }}
         transition={{ duration: 1, ease: "easeInOut" }}
         viewport={{ once: true, amount: 0.3 }}
+        
       />
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/20"></div>
@@ -31,8 +32,8 @@ const IranMainpic = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-19 Days Iraq Special Packages
-        </motion.h2>
+Shaban Group Packages        
+</motion.h2>
 
         <motion.p
           className="mt-4 text-sm sm:text-base md:text-lg text-gray-200 max-w-2xl drop-shadow-lg"
@@ -41,10 +42,10 @@ const IranMainpic = () => {
           transition={{ duration: 0.8, delay: 0.9 }}
           viewport={{ once: true, amount: 0.3 }}
         >
-<b>2026</b>        </motion.p>
+        </motion.p>
       </div>
     </motion.div>
   );
 };
 
-export default IranMainpic;
+export default ShabanMainpic;

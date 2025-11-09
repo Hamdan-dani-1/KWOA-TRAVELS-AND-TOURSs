@@ -6,6 +6,8 @@ import Rajab from './Component/zayarat-packages/rajab/13rajab';
 import Arbyene from './Component/arbyene/arbyene';
 import Winter from './Component/zayarat-packages/Winter/winter';
 import Iranspecial from './Component/zayarat-packages/iran-special/iranspecial';
+import DaysIraq from "../src/Component/zayarat-packages/19-days-iraq/19daysiraq"
+import Shaban from './Component/zayarat-packages/Shaban-Group/Shaban';
 const App = () => {
   return (
     <div>
@@ -17,6 +19,8 @@ const App = () => {
         <Route path="/arbaeen" element={<Arbyene />} />
         <Route path="/zayarat/wintervacation" element={<Winter />} />
         <Route path="/zayarat/Iranspecial" element={<Iranspecial />} />
+        <Route path="/zayarat/19daysIraq" element={<DaysIraq />} />
+        <Route path="/zayarat/Shabangroup" element={<Shaban />} />
 
       </Routes>
     </div>

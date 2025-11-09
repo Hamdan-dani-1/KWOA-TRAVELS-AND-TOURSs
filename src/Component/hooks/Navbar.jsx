@@ -47,7 +47,7 @@ const Navbar = () => {
                 <Link to="/zayarat/iranspecial">Iran Special December Package</Link>
               </li>
               <li className="px-4 py-2 hover:bg-accentt transition">
-                <Link to="/zayarat/iraqzayarat">19 days iraq zayarat package 2026</Link>
+                <Link to="/zayarat/19daysIraq">19 days iraq zayarat package 2026</Link>
               </li>
               <li className="px-4 py-2 hover:bg-accentt transition">
                 <Link to="/zayarat/shabangroup">Shaban Group</Link>
