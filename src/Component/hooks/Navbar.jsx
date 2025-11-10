@@ -63,7 +63,11 @@ const Navbar = () => {
           <Link to="/arbaeen" > Arbaeen</Link>
          </li>
         <li className="hover:text-accentt cursor-pointer transition">Umrah</li>
-        <li className="hover:text-accentt cursor-pointer transition">About</li>
+        <li className="hover:text-accentt cursor-pointer transition">
+                  <Link to="/about">About</Link>
+
+          
+          </li>
         <li className="hover:text-accentt mr-[20px] cursor-pointer transition">
         <Link to="/contact">Contact</Link>
 
