@@ -46,8 +46,14 @@ const IranPostersection = () => {
             }}
           />
 
-          <h2 className="text-3xl font-extrabold text-green-800">
-            Embark on a Sacred Journey — <span className="text-green-700">Iran By Air, December 2025</span>
+          <h2
+            className="text-3xl font-extrabold"
+            style={{ color: "#926F4B" }}
+          >
+            Embark on a Sacred Journey —{" "}
+            <span style={{ color: "#926F4B" }}>
+              Iran By Air, December 2025
+            </span>
           </h2>
 
           <p className="text-gray-700 leading-relaxed">
@@ -57,14 +63,16 @@ const IranPostersection = () => {
             performing Ziyarat at the most revered shrines across Iran.
           </p>
 
-          <h3 className="text-2xl font-bold text-green-700 mt-6">
+          <h3
+            className="text-2xl font-bold mt-6"
+            style={{ color: "#926F4B" }}
+          >
             🌍 Iran – December Package Highlights
           </h3>
 
           <ul className="list-disc ml-6 text-gray-700 space-y-1">
             <li>
-              <strong>Flights:</strong> Lahore–Tehran–Lahore / Lahore–Mashhad–Lahore /
-              Karachi–Tehran–Karachi
+              <strong>Flights:</strong> Lahore–Tehran–Lahore / Lahore–Mashhad–Lahore / Karachi–Tehran–Karachi
             </li>
             <li>
               <strong>Route:</strong> Tehran → Qom → Kerman → Mashhad → Tehran
@@ -89,7 +97,10 @@ const IranPostersection = () => {
             </li>
           </ul>
 
-          <h3 className="text-2xl font-bold text-green-700 mt-6">
+          <h3
+            className="text-2xl font-bold mt-6"
+            style={{ color: "#926F4B" }}
+          >
             🕋 Inclusions
           </h3>
 
@@ -101,11 +112,14 @@ const IranPostersection = () => {
             <li>✅ Spiritual guidance by Urdu-speaking scholars</li>
           </ul>
 
-          <p className="mt-4 text-green-700 font-semibold">
+          <p style={{ color: "#926F4B" }} className="mt-4 font-semibold">
             ⏳ Limited Slots — Book your spot early for December 2025!
           </p>
 
-          <h3 className="text-lg font-bold text-green-700 mt-6">
+          <h3
+            className="text-lg font-bold mt-6"
+            style={{ color: "#926F4B" }}
+          >
             For Booking & Inquiries:
           </h3>
           <ul className="ml-6 text-gray-700 space-y-1">

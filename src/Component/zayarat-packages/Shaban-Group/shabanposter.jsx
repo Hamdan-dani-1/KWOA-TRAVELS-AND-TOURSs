@@ -5,6 +5,8 @@ import BuyNowButton from "../buynowbutton";
 import Whatsapp from "../../Contact/Whatsapp";
 
 const ShabanPostersection = () => {
+  const headingColor = "#926F4B"; // brown color for headings
+
   return (
     <div className="relative min-h-screen flex justify-center items-center bg-gradient-to-br from-green-90 via-white to-gray-100 py-20 px-6 overflow-hidden">
       {/* Floating background blobs */}
@@ -46,18 +48,16 @@ const ShabanPostersection = () => {
             }}
           />
 
-          <h2 className="text-3xl font-extrabold text-green-800">
-            Click to Book Your <span className="text-green-700">Shaban Group Seat</span>
+          <h2 className="text-3xl font-extrabold" style={{ color: headingColor }}>
+            Click to Book Your <span style={{ color: headingColor }}>Shaban Group Seat</span>
           </h2>
 
           <p className="text-gray-700 leading-relaxed">
-            Celebrate <strong>Wiladat e Imam Hussain A.S & Hazrat Abbas A.S</strong> 
-            in the blessed city of <strong>Karbala</strong>.  
-            Join our <strong>exclusive Shaban Ziyarat Groups</strong> and experience
-            this spiritually uplifting journey.
+            Celebrate <strong>Wiladat e Imam Hussain A.S & Hazrat Abbas A.S</strong> in the blessed city of <strong>Karbala</strong>.  
+            Join our <strong>exclusive Shaban Ziyarat Groups</strong> and experience this spiritually uplifting journey.
           </p>
 
-          <h3 className="text-2xl font-bold text-green-700 mt-6">
+          <h3 className="text-2xl font-bold mt-6" style={{ color: headingColor }}>
             🌙 Group Options
           </h3>
           <ul className="list-disc ml-6 text-gray-700 space-y-1">
@@ -66,20 +66,18 @@ const ShabanPostersection = () => {
             <li>20 Days Iran–Iraq Group – 3, 4 Shaban in Karbala, 15 Shaban in Mashhad</li>
           </ul>
 
-          <h3 className="text-2xl font-bold text-green-700 mt-6">
+          <h3 className="text-2xl font-bold mt-6" style={{ color: headingColor }}>
             🕌 Stays & Ziyarat
           </h3>
           <p className="text-gray-700">
-            Stay in <strong>Najaf (3–4 Nights)</strong>, <strong>Karbala (5–10 Nights)</strong>,
-            and <strong>Kazmain (1–2 Nights)</strong>.
+            Stay in <strong>Najaf (3–4 Nights)</strong>, <strong>Karbala (5–10 Nights)</strong>, and <strong>Kazmain (1–2 Nights)</strong>.
           </p>
 
           <p className="text-gray-700">
-            Ziyarat includes: Najaf, Kufa, Kazmain, Samarra, Balad, Karbala, Musayyab,
-            and for Iran–Iraq groups: Qum, Mashhad, Tehran, Nishapur.
+            Ziyarat includes: Najaf, Kufa, Kazmain, Samarra, Balad, Karbala, Musayyab, and for Iran–Iraq groups: Qum, Mashhad, Tehran, Nishapur.
           </p>
 
-          <h3 className="text-2xl font-bold text-green-700 mt-6">
+          <h3 className="text-2xl font-bold mt-6" style={{ color: headingColor }}>
             ✈️ Services Included
           </h3>
           <ul className="list-disc ml-6 text-gray-700 space-y-1">
@@ -91,16 +89,15 @@ const ShabanPostersection = () => {
             <li>Jashn & Spiritual Gatherings</li>
           </ul>
 
-          <p className="mt-4 text-green-700 font-semibold">
+          <p style={{ color: headingColor }} className="mt-4 font-semibold">
             Register yourself & your family to join this <strong>spiritual journey</strong>.
           </p>
 
           <p className="text-gray-700 leading-relaxed">
-            Organized by <strong>Karwane Voice of Aimma Pvt Ltd</strong> /{" "}
-            <strong>Sky Travel & Tours</strong>.
+            Organized by <strong>Karwane Voice of Aimma Pvt Ltd</strong> / <strong>Sky Travel & Tours</strong>.
           </p>
 
-          <h3 className="text-lg font-bold text-green-700 mt-6">
+          <h3 className="text-lg font-bold mt-6" style={{ color: headingColor }}>
             For Booking & Inquiries:
           </h3>
           <ul className="ml-6 text-gray-700 space-y-1">

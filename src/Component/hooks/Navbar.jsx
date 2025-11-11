@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-
+import logo from "../../logo/logo.png"
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -15,7 +15,14 @@ const Navbar = () => {
 
   return (
     <nav className="absolute top-9 left-0 w-full flex justify-between items-center p-6 bg-black/40 text-white shadow-lg backdrop-blur-sm z-20">
-      <h1 className="text-2xl ml-[10px] font-bold sm:ml-[30px]">TravelSite</h1>
+   <Link to="/" className="flex items-center ml-4 sm:ml-8">
+  <img
+    src={logo}
+    alt="Quba Travel Logo"
+    className="h-10 sm:h-12 md:h-14 w-auto object-contain"
+  />
+</Link>
+
       
       {/* Desktop Menu */}
       <ul className="hidden lg:flex lg:space-x-8">
@@ -56,13 +63,17 @@ const Navbar = () => {
           )}
         </li>
 
-        <li className="hover:text-accentt cursor-pointer transition">Ashura Oblige 
+        <li className="hover:text-accentt cursor-pointer transition">
+          <Link to="/Ashura"> Ashura Oblige </Link>
+          
+         
           
            </li>
         <li className="hover:text-accentt cursor-pointer transition">
           <Link to="/arbaeen" > Arbaeen</Link>
          </li>
-        <li className="hover:text-accentt cursor-pointer transition">Umrah</li>
+        <li className="hover:text-accentt cursor-pointer transition">
+          <Link to="/Umrah">Umrah</Link></li>
         <li className="hover:text-accentt cursor-pointer transition">
                   <Link to="/about">About</Link>
 

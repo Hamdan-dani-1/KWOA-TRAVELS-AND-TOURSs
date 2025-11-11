@@ -5,6 +5,8 @@ import BuyNowButton from "../buynowbutton";
 import Whatsapp from "../../Contact/Whatsapp";
 
 const WinterPostersection = () => {
+  const headingColor = "#926F4B"; // brown color for headings
+
   return (
     <div className="relative min-h-screen flex justify-center items-center bg-gradient-to-br from-green-90 via-white to-gray-100 py-20 px-6 overflow-hidden">
       {/* Floating background blobs for depth */}
@@ -46,52 +48,42 @@ const WinterPostersection = () => {
             }}
           />
 
-          <h2 className="text-3xl font-extrabold text-green-800">
+          <h2 className="text-3xl font-extrabold" style={{ color: headingColor }}>
             Experience the Ultimate Iraq & Iran Spiritual Journey
           </h2>
 
           <p className="text-gray-700 leading-relaxed">
             Experience the ultimate <strong>14-day Iraq</strong> or{" "}
             <strong>18-day Iran–Iraq</strong> spiritual journey by air, covering
-            the holiest sites in both countries. This is our{" "}
-            <strong>Regular Package</strong> with guaranteed flights and
-            standard services from Karachi, Islamabad, and Lahore.
+            the holiest sites in both countries. This is our <strong>Regular Package</strong> 
+            with guaranteed flights and standard services from Karachi, Islamabad, and Lahore.
           </p>
 
           <p className="text-gray-700 leading-relaxed">
-            Enjoy the <strong>best services</strong> from our tour company with
-            seamless processing, timely travel, and a very comfortable Ziyarat
-            schedule under the guidance of a religious scholar from{" "}
-            <strong>Najaf-e-Ashraf</strong>.
+            Enjoy the <strong>best services</strong> from our tour company with seamless processing, timely travel, 
+            and a very comfortable Ziyarat schedule under the guidance of a religious scholar from <strong>Najaf-e-Ashraf</strong>.
           </p>
 
-          <h3 className="text-2xl font-bold text-green-700 mt-6">
+          <h3 className="text-2xl font-bold mt-6" style={{ color: headingColor }}>
             ✈️ By Air Package Highlights for IRAQ IRAN
           </h3>
 
           <ul className="list-disc ml-6 text-gray-700 space-y-1">
             <li>
-              <strong>Flights Included:</strong> Lahore → Najaf | Najaf → Tehran
-              | Mashhad → Lahore (or vice versa)
+              <strong>Flights Included:</strong> Lahore → Najaf | Najaf → Tehran | Mashhad → Lahore (or vice versa)
             </li>
             <li>
-              <strong>Comfortable Stays:</strong> 4 Nights Najaf | 5 Nights
-              Karbala | 1 Night Kazmain | 4 Nights Qum | 5 Nights Mashhad
+              <strong>Comfortable Stays:</strong> 4 Nights Najaf | 5 Nights Karbala | 1 Night Kazmain | 4 Nights Qum | 5 Nights Mashhad
             </li>
             <li>
               <strong>Ziyarat Coverage:</strong>
               <br />
-              <span className="block pl-4">
-                <strong>IRAQ:</strong> Karbala, Najaf, Kufa, Samarra, Kazmain,
-                Balad, Musayyab
-              </span>
-              <span className="block pl-4">
-                <strong>IRAN:</strong> Mashhad, Nishapur, Qum, Tehran, Jamkaran
-              </span>
+              <span className="block pl-4"><strong>IRAQ:</strong> Karbala, Najaf, Kufa, Samarra, Kazmain, Balad, Musayyab</span>
+              <span className="block pl-4"><strong>IRAN:</strong> Mashhad, Nishapur, Qum, Tehran, Jamkaran</span>
             </li>
           </ul>
 
-          <h3 className="text-2xl font-bold text-green-700 mt-6">
+          <h3 className="text-2xl font-bold mt-6" style={{ color: headingColor }}>
             🕋 By Air 2025 Inclusions
           </h3>
 
@@ -103,11 +95,11 @@ const WinterPostersection = () => {
             <li>✅ Expert Guidance (Urdu/English speakers)</li>
           </ul>
 
-          <p className="mt-4 text-green-700 font-semibold">
+          <p style={{ color: headingColor }} className="mt-4 font-semibold">
             ⏳ Closing Dates: Book at least 30 days before departure!
           </p>
 
-          <h3 className="text-lg font-bold text-green-700 mt-6">
+          <h3 className="text-lg font-bold mt-6" style={{ color: headingColor }}>
             For further information Contact us:
           </h3>
           <ul className="ml-6 text-gray-700 space-y-1">
@@ -115,6 +107,8 @@ const WinterPostersection = () => {
             <li>03000701049</li>
             <li>03094095633</li>
           </ul>
+
+          <Whatsapp />
         </motion.div>
 
         {/* RIGHT SIDE POSTER */}
@@ -122,10 +116,7 @@ const WinterPostersection = () => {
           className="flex justify-center items-center"
           initial={{ opacity: 0, x: 120 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{
-            duration: 1.8,
-            ease: [0.25, 0.8, 0.25, 1],
-          }}
+          transition={{ duration: 1.8, ease: [0.25, 0.8, 0.25, 1] }}
           viewport={{ once: true }}
         >
           <motion.img

@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import Poster from "../../poster.png";
 import BuyNowButton from "../buynowbutton";
-import Whatsapp from "../../Contact/Whatsapp";
 
 const Postersection = () => {
   return (
@@ -35,25 +34,18 @@ const Postersection = () => {
           viewport={{ once: true }}
           className="space-y-6"
         >
-<BuyNowButton
-  onClick={() => {
-    // WhatsApp number in international format without '+' or leading zeros
-    const phone = "923001234567";
-    
-    // The message you want to pre-fill
-    const message = encodeURIComponent("I want to buy this Iraq package");
-    
-    // Correct WhatsApp URL
-    const url = `https://wa.me/${phone}?text=${message}`;
-    
-    // Open in a new tab
-    window.open(url, "_blank", "noopener,noreferrer");
-  }}
-/>
+          <BuyNowButton
+            onClick={() => {
+              const phone = "923001234567";
+              const message = encodeURIComponent("I want to buy this Iraq package");
+              const url = `https://wa.me/${phone}?text=${message}`;
+              window.open(url, "_blank", "noopener,noreferrer");
+            }}
+          />
 
-
-
-          <h2 className="text-3xl font-extrabold text-green-800">IRAQ Group</h2>
+          <h2 className="text-3xl font-extrabold" style={{ color: "#926F4B" }}>
+            IRAQ Group
+          </h2>
           <ul className="list-disc ml-6 text-gray-700 space-y-2">
             <li>Flights: Lahore, Najaf, Lahore, Karachi, Najaf, Karachi</li>
             <li>Stay: 5 Nights Karbala & 9 Nights Najaf in 4-Star hotels</li>
@@ -62,7 +54,12 @@ const Postersection = () => {
             <li>Closing Dates: 30 days before departure</li>
           </ul>
 
-          <h2 className="text-3xl font-extrabold text-green-800 pt-6">IRAN IRAQ Group</h2>
+          <h2
+            className="text-3xl font-extrabold pt-6"
+            style={{ color: "#926F4B" }}
+          >
+            IRAN IRAQ Group
+          </h2>
           <ul className="list-disc ml-6 text-gray-700 space-y-2">
             <li>
               Flights: Lahore/Karachi to Najaf, Najaf to Tehran, Mashhad to Lahore/Karachi
@@ -81,7 +78,7 @@ const Postersection = () => {
             From ISB flight from Lahore not available
           </p>
 
-          <h3 className="text-lg font-bold text-green-700 mt-6">
+          <h3 className="text-lg font-bold mt-6" style={{ color: "#926F4B" }}>
             For further information Contact us:
           </h3>
           <ul className="ml-6 text-gray-700 space-y-1">
@@ -101,8 +98,8 @@ const Postersection = () => {
           initial={{ opacity: 0, x: 120 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
-            duration: 1.8, // slow fade
-            ease: [0.25, 0.8, 0.25, 1], // smooth cubic easing
+            duration: 1.8,
+            ease: [0.25, 0.8, 0.25, 1],
           }}
           viewport={{ once: true }}
         >

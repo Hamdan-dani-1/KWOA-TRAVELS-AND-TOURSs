@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Poster from "./19iraq.jpg";
-import BuyNowButton from "../buynowbutton";
-import Whatsapp from "../../Contact/Whatsapp";
+import Poster from "./a.png";
+import BuyNowButton from "../zayarat-packages/buynowbutton";
+import Whatsapp from "../Contact/Whatsapp";
 
-const IraqPostersection = () => {
+const AshuraPostersection = () => {
   return (
     <div className="relative min-h-screen flex justify-center items-center bg-gradient-to-br from-green-90 via-white to-gray-100 py-20 px-6 overflow-hidden">
       {/* Floating background blobs */}
@@ -48,10 +48,10 @@ const IraqPostersection = () => {
 
           <h2
             className="text-3xl font-extrabold"
-            style={{ color: "#926F4B" }}
+            style={{ color: "#6e0303ff" }}
           >
             19 Days{" "}
-            <span style={{ color: "#926F4B" }}>
+            <span style={{ color: "#650505ff" }}>
               IRAQ Ziyarat Package – January 2026
             </span>
           </h2>
@@ -71,7 +71,7 @@ const IraqPostersection = () => {
 
           <h3
             className="text-2xl font-bold mt-6"
-            style={{ color: "#926F4B" }}
+            style={{ color: "#9e0303ff" }}
           >
             🛫 Departure Cities & Cost
           </h3>
@@ -84,7 +84,7 @@ const IraqPostersection = () => {
 
           <h3
             className="text-2xl font-bold mt-6"
-            style={{ color: "#926F4B" }}
+            style={{ color: "#720404ff" }}
           >
             ✅ What's Included?
           </h3>
@@ -99,7 +99,7 @@ const IraqPostersection = () => {
             <li>Complete Ziyarat Schedule</li>
           </ul>
 
-          <p style={{ color: "#926F4B" }} className="mt-4 font-semibold">
+          <p style={{ color: "#590d04ff" }} className="mt-4 font-semibold">
             📅 Departure Date: <strong>January 2nd Week – Secure your seat early!</strong>
           </p>
 
@@ -111,7 +111,7 @@ const IraqPostersection = () => {
 
           <h3
             className="text-lg font-bold mt-6"
-            style={{ color: "#926F4B" }}
+            style={{ color: "#600202ff" }}
           >
             For Booking & Inquiries:
           </h3>
@@ -145,4 +145,4 @@ const IraqPostersection = () => {
   );
 };
 
-export default IraqPostersection;
+export default AshuraPostersection;

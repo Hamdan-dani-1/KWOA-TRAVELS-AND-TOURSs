@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Poster from "./19iraq.jpg";
-import BuyNowButton from "../buynowbutton";
-import Whatsapp from "../../Contact/Whatsapp";
+import Poster from "./umraposter.png";
+import BuyNowButton from "./buynowbutton";
+import Whatsapp from "../Contact/Whatsapp";
 
-const IraqPostersection = () => {
+const UmrahPostersection = () => {
   return (
     <div className="relative min-h-screen flex justify-center items-center bg-gradient-to-br from-green-90 via-white to-gray-100 py-20 px-6 overflow-hidden">
       {/* Floating background blobs */}
@@ -145,4 +145,4 @@ const IraqPostersection = () => {
   );
 };
 
-export default IraqPostersection;
+export default UmrahPostersection;

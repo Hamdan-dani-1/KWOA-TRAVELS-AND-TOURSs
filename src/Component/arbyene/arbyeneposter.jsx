@@ -2,13 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import Poster from "./post.jpg";
 import BuyNowButton from "./buynowbutton";
-import Whatsapp from "../Contact/Whatsapp";
-
 
 const Arbeyene1 = () => {
   return (
     <div className="relative min-h-screen flex justify-center items-center bg-gradient-to-br from-green-50 via-white to-gray-100 py-20 px-6 overflow-hidden">
-      {/* Floating background blobs for depth */}
+      {/* Floating background blobs */}
       <motion.div
         className="absolute -top-40 -left-40 w-96 h-96 bg-green-200 opacity-30 rounded-full blur-3xl"
         animate={{ y: [0, 30, 0], x: [0, 20, 0] }}
@@ -26,7 +24,7 @@ const Arbeyene1 = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
-        className="relative z-10 max-w-6xl w-full bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl p-10 grid md:grid-cols-2 gap-12 items-start border border-green-100"
+        className="relative z-10 max-w-6xl w-full bg-white/90 backdrop-blur-xl rounded-3xl shadow-2xl p-10 grid md:grid-cols-2 gap-12 items-start border border-green-200"
       >
         {/* LEFT SIDE TEXT */}
         <motion.div
@@ -36,26 +34,19 @@ const Arbeyene1 = () => {
           viewport={{ once: true }}
           className="space-y-6"
         >
-<BuyNowButton
-  onClick={() => {
-    // WhatsApp number in international format without '+' or leading zeros
-    const phone = "923001234567";
-    
-    // The message you want to pre-fill
-    const message = encodeURIComponent("I want to buy this Iraq package");
-    
-    // Correct WhatsApp URL
-    const url = `https://wa.me/${phone}?text=${message}`;
-    
-    // Open in a new tab
-    window.open(url, "_blank", "noopener,noreferrer");
-  }}
-/>
+          <BuyNowButton
+            onClick={() => {
+              const phone = "923001234567";
+              const message = encodeURIComponent("I want to buy this Iraq package");
+              const url = `https://wa.me/${phone}?text=${message}`;
+              window.open(url, "_blank", "noopener,noreferrer");
+            }}
+          />
 
-
-
-          <h2 className="text-3xl font-extrabold text-green-800">IRAQ Group</h2>
-          <ul className="list-disc ml-6 text-gray-700 space-y-2">
+          <h2 className="text-3xl font-extrabold" style={{ color: "#926F4B" }}>
+            IRAQ Group
+          </h2>
+          <ul className="list-disc ml-6 text-gray-800 space-y-2">
             <li>Flights: Lahore, Najaf, Lahore, Karachi, Najaf, Karachi</li>
             <li>Stay: 5 Nights Karbala & 9 Nights Najaf in 4-Star hotels</li>
             <li>Ziarat: Karbala, Najaf, Samarra, Kazmain, Balad, Musayyib, Kufa</li>
@@ -63,17 +54,13 @@ const Arbeyene1 = () => {
             <li>Closing Dates: 30 days before departure</li>
           </ul>
 
-          <h2 className="text-3xl font-extrabold text-green-800 pt-6">IRAN IRAQ Group</h2>
-          <ul className="list-disc ml-6 text-gray-700 space-y-2">
-            <li>
-              Flights: Lahore/Karachi to Najaf, Najaf to Tehran, Mashhad to Lahore/Karachi
-            </li>
-            <li>
-              Stay: 5 Nights Karbala & 4 Nights Najaf in Iraq, 4 Nights Qum & 4 Nights Mashhad
-            </li>
-            <li>
-              Ziarat: Karbala, Najaf, Samarra, Kazmain, Balad, Musayyib, Qum, Mashhad
-            </li>
+          <h2 className="text-3xl font-extrabold pt-6" style={{ color: "#926F4B" }}>
+            IRAN IRAQ Group
+          </h2>
+          <ul className="list-disc ml-6 text-gray-800 space-y-2">
+            <li>Flights: Lahore/Karachi to Najaf, Najaf to Tehran, Mashhad to Lahore/Karachi</li>
+            <li>Stay: 5 Nights Karbala & 4 Nights Najaf in Iraq, 4 Nights Qum & 4 Nights Mashhad</li>
+            <li>Ziarat: Karbala, Najaf, Samarra, Kazmain, Balad, Musayyib, Qum, Mashhad</li>
             <li>Departure: 30 December 2025</li>
             <li>Closing Dates: 30 days before departure</li>
           </ul>
@@ -82,35 +69,32 @@ const Arbeyene1 = () => {
             From ISB flight from Lahore not available
           </p>
 
-          <h3 className="text-lg font-bold text-green-700 mt-6">
+          <h3 className="text-lg font-bold mt-6" style={{ color: "#926F4B" }}>
             For further information Contact us:
           </h3>
-          <ul className="ml-6 text-gray-700 space-y-1">
+          <ul className="ml-6 text-gray-800 space-y-1">
             <li>03454001049</li>
             <li>03000701049</li>
             <li>03094095633</li>
           </ul>
 
-          <p className="text-sm text-gray-600 mt-4">
+          <p className="text-sm text-gray-700 mt-4">
             Karbala ziyarat package from Pakistan Price.
           </p>
         </motion.div>
 
-        {/* RIGHT SIDE POSTER (slow fade from right) */}
+        {/* RIGHT SIDE POSTER */}
         <motion.div
           className="flex justify-center items-center"
           initial={{ opacity: 0, x: 120 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{
-            duration: 1.8, // slow fade
-            ease: [0.25, 0.8, 0.25, 1], // smooth cubic easing
-          }}
+          transition={{ duration: 1.8, ease: [0.25, 0.8, 0.25, 1] }}
           viewport={{ once: true }}
         >
           <motion.img
             src={Poster}
             alt="Ziyarat Poster"
-            className="w-full max-w-md rounded-2xl shadow-2xl border border-gray-200"
+            className="w-full max-w-md rounded-2xl shadow-2xl border border-gray-300"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 120 }}
           />
